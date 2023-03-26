@@ -1,0 +1,40 @@
+<div>
+  <a href="https://app.zeroheight.com/landing" target="_blank">
+    <img
+      class="work-logo"
+      src="assets/images/zh_logo.svg"
+      style="width: 212px"
+    />
+  </a>
+  <p>Design systems documentation</p>
+
+  <div class="job-details">
+    <h5 class="job-role">Full stack product engineer</h5>
+    <a href="https://app.zeroheight.com/landing" target="_blank"
+      >https://app.zeroheight.com</a
+    >
+    <p class="dates"><b>Sept 2022 - present</b></p>
+    <div class="job-skills">
+      {% for item in site.data.zeroheight.skills %}
+      <div class="skill-capsule">{{item}}</div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <p>
+    <span class="lead-in"
+      >As a product engineer at <b class="app-title">zeroheight</b> my role is
+      to develop features,</span
+    ><br>
+    from planning feature development and thinking about ux/ui, to development
+    in React and Ruby on Rails.</p>
+    <p>As part of team forest, some of the features
+    I've worked on includes:
+    <ul>
+        <li>converting the app's core rich-text editor framework from <a href="https://quilljs.com/" target="_blank">Quill</a>
+            to the more robust and feature-rich <a href="https://prosemirror.net/" target="_blank">Prosemirror</a></li>
+        <li>introducing page history versioning and version restoration</li>
+        <li>creating a new editor component type which allows users to monitor and update their components statuses</li>
+    </ul>
+  </p>
+</div>

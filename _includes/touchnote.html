@@ -1,13 +1,26 @@
 <div>
   <a href="https://app.touchnote.com/" target="_blank">
     <img class="work-logo" src="assets/images/logo.png" style="width: 80px" />
-    <p>app.touchnote.com</p></a
-  >
+  </a>
+  <p>Delivering everyday kindness</p>
+
+  <div class="job-details">
+    <h5 class="job-role">Front end developer</h5>
+    <a href="https://app.touchnote.com/" target="_blank">app.touchnote.com</a>
+    <p class="dates">
+      <b>Aug 2018 - July 2021 </b><small><em>(3 years)</em></small>
+    </p>
+    <div class="job-skills">
+      {% for item in site.data.touchnote.skills %}
+      <div class="skill-capsule">{{item}}</div>
+      {% endfor %}
+    </div>
+  </div>
 
   <p>
     <span class="lead-in"
       >I was hired at <b class="app-title">TouchNote</b> in 2018, as a
-      <b>Frontend Angular 2+</b> </span
+      <b>front end Angular</b> </span
     >developer. Here, I was part of the <b>memberships team</b> and developed
     features for the new membership model that the company adopted shortly after
     I joined, and also part of the <b>engagement team,</b> which focused on

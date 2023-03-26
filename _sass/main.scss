@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+small {
+  font-size: smaller;
+}
+
 .lead-in {
   font-size: 20px;
   font-weight: 400;
@@ -52,6 +56,12 @@ nav.scroll {
   }
 }
 
+nav:not(.scroll) {
+  a:hover {
+    color: #07058e;
+  }
+}
+
 h1 {
   font-family: 'Oswald', sans-serif;
   padding-top: 63vh;
@@ -67,6 +77,11 @@ h3 {
   margin-bottom: 30px;
   font-weight: bold;
   color: #141334;
+}
+
+h5 {
+  font-size: 24px;
+  margin-bottom: 8px;
 }
 
 img.work-logo {
@@ -158,6 +173,11 @@ i {
   justify-content: center;
 }
 
+.details-container a {
+  text-decoration: underline;
+  color: #07058e;
+}
+
 .work {
   margin: 80px auto;
 }
@@ -169,8 +189,13 @@ i {
 }
 
 #work,
-#profile {
+#profile,
+#projects {
   width: 50vw;
+}
+
+li {
+  margin: 10px;
 }
 
 #skills {
@@ -178,12 +203,11 @@ i {
   align-items: center;
   li {
     margin: 10px;
+    font-size: 20px;
   }
-}
-
-#work li a {
-  letter-spacing: 4px;
-  font-style: italic;
+  li p {
+    margin-top: 10px;
+  }
 }
 
 a {
@@ -192,12 +216,10 @@ a {
   color: #141334;
 }
 
-li {
-  font-size: 20px;
-}
-
-li p {
-  margin-top: 10px;
+#zeroheight {
+  li {
+    list-style-type: circle;
+  }
 }
 
 #contact {
@@ -217,9 +239,48 @@ li p {
   }
 }
 
+a:hover {
+  color: #c2c1ff;
+  transition: color ease-in-out 0.2s;
+}
+
+#contact {
+  i {
+    transition: color ease-in-out 0.2s;
+  }
+  i:hover {
+      transform: scale(1.2);
+      color: #c2c1ff;
+  }
+}
+
+
+.job-details {
+  margin: 24px 0;
+  .dates {
+    margin-top: 6px;
+  }
+}
+
+
+.job-skills {
+  display: flex;
+  margin: 8px 0;
+  .skill-capsule {
+    margin-right: 8px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #c2c1ff;
+    font-weight: bold;
+  }
+}
+
+
+
 @media only screen and (max-width: 700px) {
   #work,
-  #profile {
+  #profile,
+  #projects {
     width: 70vw;
   }
   h1 {

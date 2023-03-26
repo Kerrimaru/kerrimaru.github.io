@@ -24,7 +24,7 @@ layout: default
 
     <p>
       <span class="lead-in"
-        >My name is <b>Kerri,</b> I am a <b>Javascript web developer</b></span
+        >My name is <b>Kerri,</b> I am a <b>JavaScript web developer</b></span
       >
       based in London. I care a lot about building nice things that work well!
     </p>
@@ -44,14 +44,14 @@ layout: default
       <h2>Skills.</h2>
       <ul>
         <li>JavaScript</li>
-        <li>Angular 2+</li>
+        <li>Angular</li>
+        <li>TypeScript</li>
         <li>RxJs</li>
         <li>TypeScript</li>
         <li>HTML, SCSS</li>
-        <li>Ruby</li>
-        <li>Ruby on Rails</li>
-        <li>Databases with Postgres and SQL3</li>
-        <li>Jira, Confluence, Monday</li>
+        <li>Ruby & Ruby on Rails</li>
+        <li>Databases with Postgres & SQL3</li>
+        <li>Git, Jira, Confluence, Notion</li>
       </ul>
     </div>
   </div>
@@ -69,10 +69,23 @@ layout: default
     {% endfor %}
   </div>
 
+  <div id="projects" class="details-container">
+    <br /><br />
+    <h3>Projects.</h3>
+
+    {% for item in site.data.projects %}
+    <div class="work" id="{{item.id}}">
+      {% if item.title %}
+      <h3>{{item.title}}</h3>
+      {% endif %} {% include {{item.path}}.html title=item.title %}
+    </div>
+    {% endfor %}
+  </div>
+
   <div id="contact" class="details-container">
     <h2>Contact.</h2>
-    <p>kerri.maru@gmail.com</p>
-    <div>
+    <p><a href="mailto:kerri.maru@gmail.com">kerri.maru@gmail.com</a></p>
+    <div id="social">
       <a href="https://github.com/Kerrimaru" target="_blank"
         ><i class="fab fa-github fa-2x"></i
       ></a>
