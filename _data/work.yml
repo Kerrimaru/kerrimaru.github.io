@@ -1,11 +1,6 @@
+- path: zeroheight
+  id: zeroheight
+- path: cognetivity
+  id: cognetivity
 - path: touchnote
   id: touchnote
-- title: Judith's Kitchen
-  path: judith
-  id: judith
-- title: Memoria
-  path: memoria
-  id: memoria
-- title: Woodworking
-  path: woodworking
-  id: woodworking

@@ -1,4 +1,4 @@
-  images:
+images:
   - image: assets/images/touchnote/membership.png
     caption: New membership dashboard
   - image: assets/images/touchnote/csv-1.png
@@ -11,6 +11,7 @@
     caption: Text stickers feature
   - image: assets/images/touchnote/address-book.png
     caption: Address book with relationships feature
+skills: [Angular, Typescript, RxJs, html, scss]
   # - image: assets/images/touchnote/csv1.png
   # - image: assets/images/touchnote/csv2.png
   # - image: assets/images/touchnote/kerri-bella-canvas.png

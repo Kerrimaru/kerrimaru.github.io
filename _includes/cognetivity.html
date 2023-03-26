@@ -1,0 +1,46 @@
+<div>
+  <a href="https://cognetivity.com/" target="_blank">
+    <img
+      class="work-logo"
+      src="assets/images/cgn-logo.svg"
+      style="width: 212px"
+    />
+  </a>
+  <p>Early detection dementia testing</p>
+
+  <div class="job-details">
+    <h5 class="job-role">Full stack developer</h5>
+    <a href="https://cognetivity.com" target="_blank"
+      >https://cognetivity.com/</a
+    >
+    <p class="dates"
+      ><b>July 2021 - Sept 2022</b
+      ><small><em> (1 year 3 months)</em></small></p
+    >
+    <div class="job-skills">
+      {% for item in site.data.cognetivity.skills %}
+      <div class="skill-capsule">{{item}}</div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <p>
+    <span class="lead-in"
+      >I was brought on at <b class="app-title">Cognetivity</b> to assist the
+      lead dev ops engineer in their daily efforts to keep the app running
+      smoothly.</span
+    ></p>
+    <p>
+    As a healthcare service, it was essential that the app experience no
+    downtime, and that all security updates were conducted within a timely
+    manner. My duties included daily monitoring of the apps using AWS
+    Cloudwatch, performing weekly security checks and updates, and conducting
+    monthly disaster recovery tests.
+  </p>
+  <p>
+    My secondary role within the company involved rewriting the internal tools
+    app from AngularJS to Angular 13, and implementing new internal tools
+    functionality. This included creating a new role-based system for internal
+    user's access privileges.
+  </p>
+</div>

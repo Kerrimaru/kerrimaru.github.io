@@ -3,10 +3,16 @@
   <p>recipe-hole.firebaseapp.com</p></a
 >
 
+<div class="job-skills">
+  {% for item in site.data.memoria.skills %}
+  <div class="skill-capsule">{{item}}</div>
+  {% endfor %}
+</div>
+
 <div>
   <p>
     <span class="lead-in"
-      ><b class="app-title">Judith's Kitchen</b>, aka Recipe Hole, is a personal
+      ><b class="app-title">Recipe Hole</b> is a personal
       project</span
     >
     which I initially started when I was first learning <b>Angular</b> and

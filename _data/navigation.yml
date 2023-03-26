@@ -10,6 +10,9 @@
 - name: Work
   link: /#work
   class: nav
+- name: Projects
+  link: /#projects
+  class: nav
 - name: Contact
   link: /#contact
   class: nav

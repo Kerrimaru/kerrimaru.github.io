@@ -1,11 +1,24 @@
-<a href="https://hidden-bastion-43962.herokuapp.com" target="_blank">
-  <img class="work-logo" src="assets/images/memoria.png" style="width: 80px" />
-  <p>hidden-bastion-43962.herokuapp.com</p></a
->
+<img class="work-logo" src="assets/images/memoria.png" style="width: 80px" />
+<p>
+  <strike> hidden-bastion-43962.herokuapp.com</strike>
+  <small> (no longer maintained 😢)</small>
+</p>
+
+<div class="job-skills">
+  {% for item in site.data.memoria.skills %}
+  <div class="skill-capsule">{{item}}</div>
+  {% endfor %}
+</div>
+
 <p>
   <span class="lead-in"><b>Memoria</b> was my final project</span> I developed
-  for my coding bootcamp. I built the app and the <b>chrome extension</b> myself
-  from scratch, with a <b>rails</b> backend and
+  for my coding bootcamp. I built the app and the
+  <a
+    href="https://chrome.google.com/webstore/detail/memoria-bookmark-app-exte/llfpopfhjbghfhplkjcmlfbjicajmeek"
+    target="_blank"
+    ><b>chrome extension</b></a
+  >
+  myself from scratch, with a <b>rails</b> backend and
   <b>vanilla javascript</b> frontend, and hosting on
   <b>Heroku.</b>
 </p>
